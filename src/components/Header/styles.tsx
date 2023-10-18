@@ -6,10 +6,10 @@ const Container = styled.div`
     width: 100%;
     height: 10vh;
     color: #FFFFFF;
-    background-color: rgb(0,0,0,0.2);
+    z-index: 200;
     display: flex;
     font-size: 2.4rem;
-    padding: 1.6rem 2.4rem 0 2.4rem;
+    padding: 2.4rem 2.4rem 0 2.4rem;
     font-weight: bold;
     justify-content: space-between;
 
@@ -26,11 +26,11 @@ export const StyledNavLink = styled(NavLink)`
     margin: 0 0.8rem;
 
     &:hover{
-       color: #c37f1a;
+       color: #e87474;
     }
 
     &.active{
-        color: red;
+        color: #fb1414;
         font-weight: bold;
     }
 `
