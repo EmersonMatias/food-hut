@@ -26,11 +26,11 @@ export const StyledNavLink = styled(NavLink)`
     margin: 0 0.8rem;
 
     &:hover{
-       color: #e87474;
+       color: #221d1d74;
     }
 
     &.active{
-        color: #fb1414;
+        color: #000000;
         font-weight: bold;
     }
 `

@@ -8,12 +8,12 @@ const Container = styled.div`
     right: 18rem;
     top: 20rem;
     border-radius: 0.8rem;
-    backdrop-filter: blur(15px);
+    backdrop-filter: blur(5px);
     position: fixed;
     display: flex;
     flex-direction: column;
-    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
-
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    
     .imgCard{
         width: 30rem;
         top: -13rem;
@@ -38,8 +38,8 @@ const Container = styled.div`
         padding: 0 1.6rem;
 
         .buy, .cart{
-            background: #FF4742;
-            border: 1px solid #FF4742;
+            background: #FF3817;
+            border: 1px solid #FF3817;
             border-radius: 6px;
             box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
             box-sizing: border-box;

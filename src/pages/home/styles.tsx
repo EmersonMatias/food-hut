@@ -41,11 +41,11 @@ export const HeroSectionPhrase = styled.p`
     letter-spacing: 1rem;
     line-height: 6.4rem;
     margin-left: 9.6rem;
-    margin-top: 20rem;
+    margin-top: 16rem;
     z-index: 100;
 
     .colorRed{
-        color: red;
+        color: #FFE418;
     }
 `
 
