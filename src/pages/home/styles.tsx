@@ -18,15 +18,16 @@ export const Background = styled.div`
 export const Gradient = styled.div`
     width: 100%;
     height: 100vh;
-    background: linear-gradient(180deg, rgba(0,0,0,1) 4%, rgba(255,255,255,0) 100%);
+    background: linear-gradient(360deg, #000000 0%, rgba(255,255,255,0) 100%);
     position: fixed;
 
+    /*
     .gradientInverted{
         width: 100%;
         height: 100vh;
         background: linear-gradient(360deg, rgba(0,0,0,1) 4%, rgba(255,255,255,0) 100%);
         position: fixed;
-    }
+    }*/
 `
 
 
@@ -41,7 +42,7 @@ export const HeroSectionPhrase = styled.p`
     line-height: 6.4rem;
     margin-left: 9.6rem;
     margin-top: 20rem;
-    z-index: 999;
+    z-index: 100;
 
     .colorRed{
         color: red;
