@@ -3,15 +3,14 @@ import BackgroundPage from "../../img/background.jpg"
 
 const Container = styled.div`
     width: 100%;
-    height: 100vh;
     display: flex;
-   
-
+    flex-direction: column;
+    overflow-wrap: break-word;
 `
 
-export const Background = styled.div`
+export const HeroSection = styled.div`
     width: 100%;
-    height: 100%;
+    height: 100vh;
     background-image: url(${BackgroundPage});
     background-size: cover;
     background-repeat: no-repeat;
@@ -20,8 +19,8 @@ export const Background = styled.div`
 export const Gradient = styled.div`
     width: 100%;
     height: 100vh;
-    background: linear-gradient(360deg, #000000 0%, rgba(255,255,255,0) 100%);
-    position: fixed;
+    background: linear-gradient(360deg, #0e0e0e 4%, rgba(255,255,255,0) 100%);
+    position: absolute;
 
     /*
     .gradientInverted{
@@ -34,7 +33,7 @@ export const Gradient = styled.div`
 export const HeroSectionPhrase = styled.p`
     width: 50%;
     color: #FFFFFF;
-    position: fixed;
+    position: absolute;
     font-size: 5.6rem;
     font-weight: bold;
     text-align: center;
@@ -82,6 +81,14 @@ export const HeroSectionPhrase = styled.p`
             opacity: 0.5;
         }
     }
+
+`
+
+export const HeroSectionFoodCard = styled.div`
+    position: absolute;
+    z-index: 3;
+    right: 18rem;
+    top: 20rem;
 
 `
 

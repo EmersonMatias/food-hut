@@ -1,15 +1,18 @@
 
-import FoodCard from "./foodCard/FoodCard";
-import Container, { Background, Gradient, HeroSectionPhrase } from "./styles";
+import FoodCard from "../../components/foodCard/FoodCard";
+import Container, { HeroSection, Gradient, HeroSectionPhrase, HeroSectionFoodCard } from "./styles";
 import Instagram from "../../img/instagram.svg"
 import Whatsapp from "../../img/whatsapp.svg"
+import DishImg from "../../img/prato1.svg"
+import TodayOffers from "./todayOffers";
+
 
 export default function Home() {
 
 
     return (
         <Container>
-            <Background>
+            <HeroSection>
 
                 <HeroSectionPhrase>
                     <div className="colorRed"> FoodHut<br /> </div>
@@ -17,7 +20,6 @@ export default function Home() {
                     de <span className="colorRed">Sabores Únicos</span> e <span className="colorRed" >Deliciosos</span>
 
                     <div className="contact">
-
                         <button className="whatsapp">
                             <img src={Whatsapp} />
                             <p>Whatsapp</p>
@@ -27,20 +29,18 @@ export default function Home() {
                             <p>Instagram</p>
                         </button>
                     </div>
+
                 </HeroSectionPhrase>
 
-                <FoodCard />
+                <HeroSectionFoodCard>
+                    <FoodCard dishImg={DishImg} dishName="Noodles de Frutos do Mar Temperados com Pimenta"/>
+                </HeroSectionFoodCard>
 
 
+                <Gradient />
+            </HeroSection>
 
-
-                <Gradient>
-                    {/*<div className="gradientInverted"></div>*/}
-                </Gradient>
-
-
-            </Background>
-
+            <TodayOffers />
 
 
         </Container>
