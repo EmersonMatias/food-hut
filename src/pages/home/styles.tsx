@@ -5,8 +5,10 @@ const Container = styled.div`
     width: 100%;
     height: 100vh;
     display: flex;
-    
+   
+
 `
+
 export const Background = styled.div`
     width: 100%;
     height: 100%;
@@ -29,8 +31,6 @@ export const Gradient = styled.div`
         position: fixed;
     }*/
 `
-
-
 export const HeroSectionPhrase = styled.p`
     width: 50%;
     color: #FFFFFF;
@@ -47,6 +47,42 @@ export const HeroSectionPhrase = styled.p`
     .colorRed{
         color: #FFE418;
     }
+
+    .contact{
+        display: flex;
+        justify-content: center;
+        margin-top: 2.4rem;
+     
+
+        .whatsapp , .instagram{
+            color: #FFFFFF;
+            display: flex;
+            font-weight: bold;
+            align-items: center;
+            cursor: pointer;
+            border: none;
+            background: linear-gradient(180deg, rgba(37, 35, 36, 0.5) 0%, rgba(158, 94, 94, 0.5) 100%);
+            backdrop-filter: blur(100px);
+            font-size: 2.4rem;
+            border-radius: 0.8rem;
+            padding: 1.6rem 3.2rem;
+            margin: 0 4rem;
+
+            img{
+                width: 4rem;
+                margin-right: 1.6rem;
+            }
+        }
+
+        .whatsapp:hover , .instagram:hover{
+            backdrop-filter: blur(1px);
+        }
+
+        .whatsapp:active , .instagram:active{
+            opacity: 0.5;
+        }
+    }
+
 `
 
 

@@ -6,6 +6,7 @@ const Container = styled.div`
     width: 100%;
     height: 10vh;
     color: #FFFFFF;
+    background-color: #0000004e;
     z-index: 200;
     display: flex;
     font-size: 2.4rem;
